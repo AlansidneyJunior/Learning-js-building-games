@@ -37,9 +37,11 @@ randomizeBtnEl.addEventListener('click', generateHistory);
 function generateHistory() {
     //verificar se customName está vazio
     newText = rawText;
+    customName = customNameEl.value;
+    
     if (customName !== '') {
         //substituir todos Bob por customName
-        newText = rawText.replaceAll('Bob', customName);
+        newText = newText.replaceAll('Bob', customName);
     }
     //checar se us ou ok está marcado e chamar função pra substituir valores
     if (ukBtnEl.checked) {
