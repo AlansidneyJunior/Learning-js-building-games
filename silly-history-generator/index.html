@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        
+        <title>Silly history generator</title>
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div>
+            <label for="custom-name">Enter a custom-name:</label>
+            <input id="custom-name" type="text" placeholder="">
+        </div>
+        <div>
+            <label for="us">US</label>
+            <input id="us" type="radio" name="uk-us" value="us" checked>
+
+            <label for="uk">UK</label>
+            <input id="uk" type="radio" name="uk-us" value="uk">
+
+        </div>
+        <div>
+            <button id="randomize" value="randomize">Generate a random story</button>
+        </div>
+        <p id="history"></p>
+
+        <script src="app.js"></script>
+    </body>
+</html>
